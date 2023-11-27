@@ -12,8 +12,11 @@
 #### 문제 풀이
 
 1. 매주 5문제씩 선정해서 문제 풀이를 진행합니다.
-2. 모든 문제에 대해 각자의 접근방법, 풀이, 코드를 설명합니다.
-3. 본인의 이름으로 된 branch로 PR후 merge
+2. 문제 선정은 스터디장 [@j2noo](https://github.com/j2noo)이 선정하며, 재밌어 보이는 문제가 있으면 요청해도 됩니다.
+3. 문제 종류는 [kks227 블로그](https://m.blog.naver.com/kks227/220769859177)의 커리큘럼에 따라, 앞에서부터 종류별로 1~2문제 선정합니다.
+4. 문제 난이도, 알고리즘 분류는 가급적 보지 않고 푸는 것을 **권장**합니다.
+5. 모든 문제에 대해 각자의 접근방법, 풀이, 코드를 설명합니다.
+6. 본인의 이름으로 된 branch로 PR후 merge
 
 #### 설명 방식
 
@@ -28,15 +31,15 @@
 #### 진행 방식
 
 - [여기](https://github.com/soo5717/2021-Algorithm-Study#readme)를 참고했습니다.
-- 화이팅
+- 꾸준히 좀 해보자.
 
 ## PR 규칙 및 Commit Message 규칙
 
-#### Pull Request
+#### Pull Request Convention
 
 - [n주차] 이름
 
-#### Commit Message
+#### Commit Message Convention
 
 - [n주차] 문제명
 
@@ -52,7 +55,7 @@
 
 ---
 
-| **주차** | **문제 1**                                              | **문제 2**                                                 | **문제 3**                                               | **문제 4**                                              | **문제 5**                                                |
-| -------- | ------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------- |
-| 1주차    | [팰린드롬인지~](https://www.acmicpc.net/problem/10988)  | [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | [보물](https://www.acmicpc.net/problem/1026)             | [2\*n 타일링](https://www.acmicpc.net/problem/11726)    | [단지번호붙이기](https://www.acmicpc.net/problem/2667)    |
-| 2주차    | [셀프 넘버](https://www.acmicpc.net/problem/4673)       | [스위치 켜고 끄기](https://www.acmicpc.net/problem/1244)   | [로프](https://www.acmicpc.net/problem/2217)             | [계단 오르기](https://www.acmicpc.net/problem/2579)     | [봄버맨](https://www.acmicpc.net/problem/16918)           |
+| **주차** | **문제 1**                                             | **문제 2**                                                 | **문제 3**                                        | **문제 4**                                                 | **문제 5**                                             |
+| -------- | ------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------ |
+| 1주차    | [팰린드롬인지~](https://www.acmicpc.net/problem/10988) | [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | [보물](https://www.acmicpc.net/problem/1026)      | [2\*n 타일링](https://www.acmicpc.net/problem/11726)       | [단지번호붙이기](https://www.acmicpc.net/problem/2667) |
+| 2주차    | [완전 제곱수](https://www.acmicpc.net/problem/1977)    | [5와 6의 차이](https://www.acmicpc.net/problem/2864)       | [쿼드 트리](https://www.acmicpc.net/problem/1992) | [가장 긴 증가하는~](https://www.acmicpc.net/problem/11053) | [DDR](https://www.acmicpc.net/problem/2342)            |
