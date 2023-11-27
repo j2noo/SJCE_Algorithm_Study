@@ -1,23 +1,18 @@
 import math
-
-powerArr = []
-for i in range(101):
-    powerArr.append(i*i)
     
 M=int(input())
 N=int(input())
 
-startIdx = math.ceil(math.sqrt(M))
-endIdx =math.floor(math.sqrt(N))
-
-
 sum=0
-for i in range(startIdx,endIdx+1):
-    sum+=powerArr[i]
-    
-if startIdx>endIdx:
-    print(-1)
+minIdx=float("inf")
 
+for i in range(1,101):
+    if i*i>=M and i*i<=N:
+        sum+=i*i
+        minIdx = min(minIdx,i)
+
+if sum==0:
+    print(-1)
 else :
     print(sum)
-    print(powerArr[startIdx])
+    print(minIdx*minIdx)
