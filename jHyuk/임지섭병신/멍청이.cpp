@@ -1,4 +1,0 @@
-incliude
-
-main
-ajtlrl
