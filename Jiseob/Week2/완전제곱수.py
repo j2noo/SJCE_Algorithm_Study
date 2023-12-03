@@ -12,7 +12,7 @@ sum = 0
 for i in range (len(squareNumber)):
     sum += squareNumber[i]
 
-if sum == 0:
+if sum != 0:
     print(sum)
     print(min(squareNumber))
 else:
