@@ -4,13 +4,13 @@
 
 using namespace std;
 
-int nArea = 0;
-int nRain[625] = { 0 };
+int nApart = 0;
+int nHouse[625] = { 0 };
 int n, map[25][25];
 
 void DFS(int i, int j) {
-	nRain[nArea]++;
-	map[i][j] = nArea + 1;				//단지번호 + 1로 숫자 변경
+	nHouse[nApart]++;
+	map[i][j] = nApart + 1;				//단지번호 + 1로 숫자 변경
 	if (map[i + 1][j] == 1 && i < n - 1) {	//아래에 아직 탐색하지 않은 집이 있다면 탐색
 		DFS(i + 1, j);
 	}
@@ -43,7 +43,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			if (map[i][j] == 1) {
-				nArea++;
+				nApart++;
 				DFS(i, j);
 			}
 		}
@@ -59,10 +59,10 @@ int main() {
 		cout << endl;
 	}*/
 
-	cout << nArea << endl;
-	sort(nRain, nRain + nArea + 1);
-	for (int i = 0; i < nArea; i++) {
-		cout << nRain[i + 1] << endl;
+	cout << nApart << endl;
+	sort(nHouse, nHouse + nApart + 1);
+	for (int i = 0; i < nApart; i++) {
+		cout << nHouse[i + 1] << endl;
 	}
 
 	return 0;
