@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+    int n1,n2,cnt=0;
+    scanf("%d\n%d",&n1,&n2);
+    for(int i=n1; i<=n2; i++){
+        if((sqrt(i)-(int)(sqrt(i)))==0){
+            if(!cnt) n1=i;
+            cnt+=i;
+        }}
+    printf(cnt?"%d\n%d":"-1",cnt,n1);
+}
