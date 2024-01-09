@@ -33,4 +33,3 @@ int main() {
     cout << *max_element(maxCnt.begin(), maxCnt.end());
 
     return 0;
-}
