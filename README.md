@@ -3,7 +3,7 @@
 > 알고리즘 빡공 스터디😎
 
 - 기간: 2023년 11월 ~
-- 정규 모임 시간: 월요일 오후 10시
+- 정규 모임 시간: 월요일 오후 9시
 - 참고 사이트: [백준](https://www.acmicpc.net/)
 - 언어: 파이썬, C++
 
@@ -19,7 +19,10 @@
 6. 본인의 이름으로 된 branch로 PR후 merge
 
 #### 설명 방식
-
+- 디스코드에서 온라인으로 진행하며, 각자 풀이에 대해 설명할 수 있어야 합니다.
+- 코멘트 코드리뷰는 따로 없으며, 구두로 진행합니다.
+- 코드리뷰는 존댓말로 합니다.
+  
 1. 적용 알고리즘 개념 간단하게 설명하기
 2. 문제 풀이를 위한 접근 방식(or 개념) 설명
 3. 기본 코드에 대한 설명
@@ -62,3 +65,4 @@
 | 3주차    | [최단경로](https://www.acmicpc.net/problem/1753)    | [타임머신](https://www.acmicpc.net/problem/11657)       | [웜홀](https://www.acmicpc.net/problem/1865) | 시험기간 | 시험기간        |
 | 4주차    | [가장 큰 정사각형](https://www.acmicpc.net/problem/1915)    | [안전 영역](https://www.acmicpc.net/problem/2468)       | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | [30](https://www.acmicpc.net/problem/10610) | [Rain (Small)](https://acmicpc.net/problem/14324)       |
 | 5주차    | [평범한 배낭](https://www.acmicpc.net/problem/12865)    | [파이프 옮기기1](https://www.acmicpc.net/problem/17070)       | [바구니 뒤집기](https://www.acmicpc.net/problem/10811) | [자리수로 나누기](https://www.acmicpc.net/problem/1490) | [토마토](https://acmicpc.net/problem/7576)       |
+
