@@ -1,66 +1,52 @@
-## 실패 ,,,
-## maxupdated하다가 때려침
-
 import copy
 import sys
-
-sys.setrecursionlimit(10**6)
+from collections import deque
 
 dy = [-1, 0 , 1, 0]
 dx = [0, -1, 0, 1]
 
-def getBreakWaterPos(R, C):
-    breakWaterPos = [[False] * C for _ in range(R)]
+def isRange(R, C , y, x):
+    return 0 <= y < R and 0 <= x < C
 
-    for i in range(C):
-        breakWaterPos[0][i] = True
-        breakWaterPos[R - 1][i] = True
+def isBoundary(R, C, y, x):
+    return y == 0 or y == R - 1 or x == 0 or x == C - 1
 
-    for i in range(R):
-        breakWaterPos[i][0] = True
-        breakWaterPos[i][C - 1] = True
+def bfs(state, updatedState, startY, startX):
+    visited = [[False] * C for _ in range(R)]
 
-    return breakWaterPos
+    queue = deque()
+    queue.append((startY, startX))
+    visited[startY][startX] = True
 
-def rollback(updatedState, updatedList):
-    for pos in updatedList:
-        y = pos[0]
-        x = pos[1]
-        
-        updatedState[y][x] = state[y][x]
+    trace = []
+    wallHeight = 987654321
 
-def dfs(updatedState, breakWaterPos, visited, updatedList, maxUpdated, y, x):
-    if breakWaterPos[y][x]:
-        return 0
+    while queue:
+        (hereY, hereX) = queue.pop()
 
-    visited[y][x] = True
+        if not isBoundary(R, C, hereY, hereX):
+            trace.append((hereY, hereX))
 
-    ret = 2000
+        for i in range(4):
+            thereY = hereY + dy[i]
+            thereX = hereX + dx[i]
 
-    for i in range(4):
-        nextY = y + dy[i]
-        nextX = x + dx[i]
+            if(not isRange(R, C, thereY, thereX)):
+                wallHeight = 0
+            else:
+                if not visited[thereY][thereX] and state[thereY][thereX] > state[hereY][hereX]:
+                    wallHeight = min(wallHeight, state[thereY][thereX])
 
-        if(updatedState[nextY][nextX] > updatedState[y][x]):
-            ret = min(ret, updatedState[nextY][nextX])
+                if not visited[thereY][thereX] and state[hereY][hereX] >= state[thereY][thereX]:
+                    visited[thereY][thereX] = True
+                    queue.append((thereY, thereX))
 
-        if not visited[nextY][nextX] and updatedState[y][x] >= updatedState[nextY][nextX]:
-            ret = min(ret, dfs(updatedState, breakWaterPos, visited, updatedList, maxUpdated, nextY, nextX))
-
-    if ret == 0:
-        rollback(updatedState, updatedList)
-    elif ret != 2000:
-        if ret > updatedState[y][x]:
-            updatedList.append((y, x))
-            updatedState[y][x] = ret
-
-    return updatedState[y][x]
+    for (y, x) in trace:
+        if wallHeight > state[y][x]:
+            updatedState[y][x] = wallHeight
 
 def calDiff(state, updatedState, R, C):
     ret = 0
-
-    print(state)
-    print(updatedState)
 
     for i in range(R):
         for j in range(C):
@@ -68,19 +54,15 @@ def calDiff(state, updatedState, R, C):
 
     return ret
 def sol(state, R, C):
-    breakWaterPos = getBreakWaterPos(R, C)
+    initState = copy.deepcopy(state)
     updatedState = copy.deepcopy(state)
 
-    for k in range(1000):
-        visited = [[False] * C for _ in range(R)]
+    for i in range(1, R):
+        for j in range(1, C):
+                bfs(state, updatedState, i, j)
+                state = copy.deepcopy(updatedState)
 
-        for i in range(1, R - 1):
-            for j in range(1, C - 1):
-                if not breakWaterPos[i][j] and not visited[i][j]:
-                    updatedList = []
-                    dfs(updatedState, breakWaterPos, visited, updatedList, 0, i, j)
-
-    return calDiff(state, updatedState, R, C)
+    return calDiff(initState, updatedState, R, C)
 
 T = int(input())
 for t in range(T):
