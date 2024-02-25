@@ -51,7 +51,9 @@
 - /n주차/문제명.cpp
 - 추가 바람
 
-### 스터디 진행 상황
+
+
+### 스터디 진행 상황(시즌 1 종료)
 
 ---
 
@@ -62,3 +64,11 @@
 | 3주차    | [최단경로](https://www.acmicpc.net/problem/1753)    | [타임머신](https://www.acmicpc.net/problem/11657)       | [웜홀](https://www.acmicpc.net/problem/1865) | 시험기간 | 시험기간        |
 | 4주차    | [가장 큰 정사각형](https://www.acmicpc.net/problem/1915)    | [안전 영역](https://www.acmicpc.net/problem/2468)       | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | [30](https://www.acmicpc.net/problem/10610) | [Rain (Small)](https://acmicpc.net/problem/14324)       |
 | 5주차    | [평범한 배낭](https://www.acmicpc.net/problem/12865)    | [파이프 옮기기1](https://www.acmicpc.net/problem/17070)       | [바구니 뒤집기](https://www.acmicpc.net/problem/10811) | [자리수로 나누기](https://www.acmicpc.net/problem/1490) | [토마토](https://acmicpc.net/problem/7576)       |
+
+### 스터디 진행 상황(시즌 2 진행중)
+
+---
+
+| **주차** | **장르**|**문제 1**                                             | **문제 2**                                                 | **문제 3**                                        | 
+| ------------------------ | ------------------------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------- |----|
+| 6주차   | DP | [쉬운 계단 수](https://www.acmicpc.net/problem/10844) | [LCS](https://www.acmicpc.net/problem/9251) | [경찰차](https://www.acmicpc.net/problem/2618)      |
