@@ -19,7 +19,7 @@ str1 = input()
 str2 = input()
 
 
-# i,j번 글자부터 시작했을때 LCS의 길이
+# i,j번 글자부터 시작했을때 LCS의 길이.
 dp = [[-1]*1001 for _ in range(1001)]
 
 print(solve(0,0))

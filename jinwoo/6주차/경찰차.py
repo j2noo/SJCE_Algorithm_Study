@@ -43,7 +43,7 @@ dp_trace =[[-1]*1002 for _ in range(1002)]
 
 print(solve(0,1))
 
-## dp 역추적
+## dp 역추적.
 m,n = 0,1
 for i in range(2,W+2):
     print(dp_trace[m][n])
