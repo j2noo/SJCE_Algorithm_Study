@@ -75,5 +75,5 @@
 | **주차** | **장르** | **문제 1**                                            | **문제 2**                                  | **문제 3**                                     |
 | -------- | -------- | ----------------------------------------------------- | ------------------------------------------- | ---------------------------------------------- |
 | 6주차    | DP       | [쉬운 계단 수](https://www.acmicpc.net/problem/10844) | [LCS](https://www.acmicpc.net/problem/9251) | [경찰차](https://www.acmicpc.net/problem/2618) |
-
+| 7주차    | Greedy       | [뒤집기](https://www.acmicpc.net/problem/1439) | [폴리노미오](https://www.acmicpc.net/problem/1343) | [숫자만들기](https://www.acmicpc.net/problem/1511) |
 
