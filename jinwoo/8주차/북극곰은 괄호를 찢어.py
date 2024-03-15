@@ -94,7 +94,7 @@ while(True):
 print(day,day2,str)    
 
 # if ans==987654321 :
-#     ans=-1
+#     ans=-12
     
 
 
