@@ -79,4 +79,3 @@
 | 8주차    | 구현       | [오목](https://www.acmicpc.net/problem/2072) | [두 번 뒤집기](https://www.acmicpc.net/problem/2505) | [인싸가위바위보](https://www.acmicpc.net/problem/16986) |
 | 9주차    | 구현       | [로봇](https://www.acmicpc.net/problem/13567) | [치즈](https://www.acmicpc.net/problem/2636) | [테트로미노](https://www.acmicpc.net/problem/14500) |
 
-
