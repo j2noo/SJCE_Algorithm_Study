@@ -78,4 +78,5 @@
 | 7주차    | Greedy       | [뒤집기](https://www.acmicpc.net/problem/1439) | [폴리노미오](https://www.acmicpc.net/problem/1343) | [숫자만들기](https://www.acmicpc.net/problem/1511) |
 | 8주차    | 구현       | [오목](https://www.acmicpc.net/problem/2072) | [두 번 뒤집기](https://www.acmicpc.net/problem/2505) | [인싸가위바위보](https://www.acmicpc.net/problem/16986) |
 | 9주차    | 구현       | [로봇](https://www.acmicpc.net/problem/13567) | [치즈](https://www.acmicpc.net/problem/2636) | [테트로미노](https://www.acmicpc.net/problem/14500) |
+| 10주차    | Greedy       | [오셀로 재배치](https://www.acmicpc.net/problem/13413) | [보석 도둑](https://www.acmicpc.net/problem/1202) | [빵집](https://www.acmicpc.net/problem/3109) |
 
