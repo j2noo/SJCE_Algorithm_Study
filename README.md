@@ -4,7 +4,7 @@
 
 - 기간: 2023년 11월 ~
 - 정규 모임 시간: 월요일 오후 9시
-- 참고 사이트: [백준](https://www.acmicpc.net/)
+- 참고 사이트: [백준](https://www.acmicpc.net/), [프로그래머스](https://programmers.co.kr/)
 - 언어: 파이썬, C++
 
 ## 스터디 규칙
@@ -49,11 +49,21 @@
 
 ## 파일 및 폴더 구조
 
-#### 백준
+#### 백준, 프로그래머스
 
 - jinwoo/n주차/문제명.py
 - /n주차/문제명.cpp
 - 추가 바람
+
+
+```
+# 프로그래머스 코드 공통 구조
+# 시간 : 20분 21초
+# 레벨 : 1
+
+# 코드 작성
+```
+
 
 ### 스터디 진행 상황(시즌 1 종료)
 
@@ -67,7 +77,7 @@
 | 4주차    | [가장 큰 정사각형](https://www.acmicpc.net/problem/1915) | [안전 영역](https://www.acmicpc.net/problem/2468)          | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | [30](https://www.acmicpc.net/problem/10610)                | [Rain (Small)](https://acmicpc.net/problem/14324)      |
 | 5주차    | [평범한 배낭](https://www.acmicpc.net/problem/12865)     | [파이프 옮기기1](https://www.acmicpc.net/problem/17070)    | [바구니 뒤집기](https://www.acmicpc.net/problem/10811)    | [자리수로 나누기](https://www.acmicpc.net/problem/1490)    | [토마토](https://acmicpc.net/problem/7576)             |
 
-### 스터디 진행 상황(시즌 2 진행중)
+### 스터디 진행 상황(시즌 2 종료)
 
 ---
 
@@ -80,3 +90,11 @@
 | 9주차    | 구현       | [로봇](https://www.acmicpc.net/problem/13567) | [치즈](https://www.acmicpc.net/problem/2636) | [테트로미노](https://www.acmicpc.net/problem/14500) |
 
 
+### 스터디 진행 상황(시즌 3 2024 7월~)
+
+---
+
+
+| **주차** | **문제 1**                                               | **문제 2**                                                 | **문제 3**                                                | **문제 4**                                                 | **문제 5**                                             |
+| -------- | -------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------ |
+| 11주차    | [달리기 경주](https://school.programmers.co.kr/learn/courses/30/lessons/178871)   | [추억 점수](https://school.programmers.co.kr/learn/courses/30/lessons/176963) | [요격시스템](https://school.programmers.co.kr/learn/courses/30/lessons/181188)              | [연속된 부분수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/178870)       |[연속 펄스 부분수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/161988) |
