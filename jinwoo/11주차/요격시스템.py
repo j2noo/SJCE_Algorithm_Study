@@ -2,6 +2,7 @@
 # https://school.programmers.co.kr/questions/47317
 # 레벨2 이거맞냐?;;
 # 가장 많이 겹치는 곳을 쏘는거라고생각
+
 def solution(targets):
     targets.sort()
     # print(targets)
@@ -14,7 +15,7 @@ def solution(targets):
             cnt+=1
             
             s,e = targets[i]
-            continue;
+            continue
                 
         s=targets[i][0]
         e = min(e,targets[i][1])
