@@ -3,7 +3,9 @@
 
 
 def solution(sequence, k):
-    # psum[i] : i번째 인덱스까지의 누적합
+
+    # psum[i] : i번째 인덱스까지의 누적합d
+
     psum=[0]
     sum=0
     ans_li = []
