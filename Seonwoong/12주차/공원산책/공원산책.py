@@ -20,8 +20,8 @@ def solution(park, routes):
         elif news=='E': idx=1
         elif news=='W':idx=2
         else: idx=3
-        
-        print(nx,ny)
+
+        #route에 X가 있는지 한칸씩 확인
         for i in range(n):
             dx,dy=op[idx][0],op[idx][1]
             if 0<=sx+dx<len(park) and 0<=sy+dy<len(park[0]) and park[sx+dx][sy+dy]!='X':
