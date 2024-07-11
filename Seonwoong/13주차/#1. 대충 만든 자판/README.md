@@ -1,10 +1,10 @@
-# [level 1] 카드 뭉치 - 159994 
+# [level 1] 대충 만든 자판 - 160586 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/159994) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/160586) 
 
 ### 성능 요약
 
-메모리: 10.3 MB, 시간: 0.01 ms
+메모리: 10.3 MB, 시간: 1.58 ms
 
 ### 구분
 
@@ -16,41 +16,45 @@
 
 ### 제출 일자
 
-2024년 07월 11일 17:19:15
+2024년 07월 11일 16:56:40
 
 ### 문제 설명
 
-<p>코니는 영어 단어가 적힌 카드 뭉치 두 개를 선물로 받았습니다. 코니는 다음과 같은 규칙으로 카드에 적힌 단어들을 사용해 원하는 순서의 단어 배열을 만들 수 있는지 알고 싶습니다.</p>
+<p>휴대폰의 자판은 컴퓨터 키보드 자판과는 다르게 하나의 키에 여러 개의 문자가 할당될 수 있습니다. 키 하나에 여러 문자가 할당된 경우, 동일한 키를 연속해서 빠르게 누르면 할당된 순서대로 문자가 바뀝니다. </p>
 
-<ul>
-<li>원하는 카드 뭉치에서 카드를 순서대로 한 장씩 사용합니다.</li>
-<li>한 번 사용한 카드는 다시 사용할 수 없습니다.</li>
-<li>카드를 사용하지 않고 다음 카드로 넘어갈 수 없습니다.</li>
-<li>기존에 주어진 카드 뭉치의 단어 순서는 바꿀 수 없습니다.</li>
-</ul>
+<p>예를 들어, 1번 키에 "A", "B", "C" 순서대로 문자가 할당되어 있다면 1번 키를 한 번 누르면 "A", 두 번 누르면 "B", 세 번 누르면 "C"가 되는 식입니다. </p>
 
-<p>예를 들어 첫 번째 카드 뭉치에 순서대로 ["i", "drink", "water"], 두 번째 카드 뭉치에 순서대로 ["want", "to"]가 적혀있을 때 ["i", "want", "to", "drink", "water"] 순서의 단어 배열을 만들려고 한다면 첫 번째 카드 뭉치에서 "i"를 사용한 후 두 번째 카드 뭉치에서 "want"와 "to"를 사용하고 첫 번째 카드뭉치에 "drink"와 "water"를 차례대로 사용하면 원하는 순서의 단어 배열을 만들 수 있습니다.</p>
+<p>같은 규칙을 적용해 아무렇게나 만든 휴대폰 자판이 있습니다. 이 휴대폰 자판은 키의 개수가 1개부터 최대 100개까지 있을 수 있으며, 특정 키를 눌렀을 때 입력되는 문자들도 무작위로 배열되어 있습니다. 또, 같은 문자가 자판 전체에 여러 번 할당된 경우도 있고, 키 하나에 같은 문자가 여러 번 할당된 경우도 있습니다. 심지어 아예 할당되지 않은 경우도 있습니다. 따라서 몇몇 문자열은 작성할 수 없을 수도 있습니다. </p>
 
-<p>문자열로 이루어진 배열 <code>cards1</code>, <code>cards2</code>와 원하는 단어 배열&nbsp;<code>goal</code>이 매개변수로 주어질 때, <code>cards1</code>과 <code>cards2</code>에 적힌 단어들로 <code>goal</code>를 만들 있다면 "Yes"를, 만들 수 없다면 "No"를 return하는 solution 함수를 완성해주세요.</p>
+<p>이 휴대폰 자판을 이용해 특정 문자열을 작성할 때, 키를 최소 몇 번 눌러야 그 문자열을 작성할 수 있는지 알아보고자 합니다. </p>
+
+<p>1번 키부터 차례대로 할당된 문자들이 순서대로 담긴 문자열배열 <code>keymap</code>과 입력하려는 문자열들이 담긴 문자열 배열 <code>targets</code>가 주어질 때, 각 문자열을 작성하기 위해 키를 최소 몇 번씩 눌러야 하는지 순서대로 배열에 담아 return 하는 solution 함수를 완성해 주세요. </p>
+
+<p>단, 목표 문자열을 작성할 수 없을 때는 -1을 저장합니다.</p>
 
 <hr>
 
 <h5>제한사항</h5>
 
 <ul>
-<li>1 ≤ <code>cards1</code>의 길이, <code>cards2</code>의 길이 ≤ 10
+<li>1 ≤ <code>keymap</code>의 길이 ≤ 100
 
 <ul>
-<li>1 ≤ <code>cards1[i]</code>의 길이, <code>cards2[i]</code>의 길이 ≤ 10</li>
-<li><code>cards1</code>과 <code>cards2</code>에는 서로 다른 단어만 존재합니다.</li>
-</ul></li>
-<li>2 ≤ <code>goal</code>의 길이 ≤ <code>cards1</code>의 길이 + <code>cards2</code>의 길이
+<li>1 ≤ <code>keymap</code>의 원소의 길이 ≤ 100</li>
+<li><code>keymap[i]</code>는 i + 1번 키를 눌렀을 때 순서대로 바뀌는 문자를 의미합니다.
 
 <ul>
-<li>1 ≤ <code>goal[i]</code>의 길이 ≤ 10</li>
-<li><code>goal</code>의 원소는 <code>cards1</code>과 <code>cards2</code>의 원소들로만 이루어져 있습니다.</li>
+<li>예를 들어 <code>keymap[0]</code> = "ABACD" 인 경우 1번 키를 한 번 누르면 A, 두 번 누르면 B, 세 번 누르면 A 가 됩니다.</li>
 </ul></li>
-<li><code>cards1</code>, <code>cards2</code>, <code>goal</code>의 문자열들은 모두 알파벳 소문자로만 이루어져 있습니다.</li>
+<li><code>keymap</code>의 원소의 길이는 서로 다를 수 있습니다.</li>
+<li><code>keymap</code>의 원소는 알파벳 대문자로만 이루어져 있습니다.</li>
+</ul></li>
+<li>1 ≤ <code>targets</code>의 길이 ≤ 100
+
+<ul>
+<li>1 ≤ <code>targets</code>의 원소의 길이 ≤ 100</li>
+<li><code>targets</code>의 원소는 알파벳 대문자로만 이루어져 있습니다.</li>
+</ul></li>
 </ul>
 
 <hr>
@@ -58,23 +62,25 @@
 <h5>입출력 예</h5>
 <table class="table">
         <thead><tr>
-<th>cards1</th>
-<th>cards2</th>
-<th>goal</th>
+<th>keymap</th>
+<th>targets</th>
 <th>result</th>
 </tr>
 </thead>
         <tbody><tr>
-<td>["i", "drink", "water"]</td>
-<td>["want", "to"]</td>
-<td>["i", "want", "to", "drink", "water"]</td>
-<td>"Yes"</td>
+<td>["ABACD", "BCEFD"]</td>
+<td>["ABCD","AABB"]</td>
+<td>[9, 4]</td>
 </tr>
 <tr>
-<td>["i", "water", "drink"]</td>
-<td>["want", "to"]</td>
-<td>["i", "want", "to", "drink", "water"]</td>
-<td>"No"</td>
+<td>["AA"]</td>
+<td>["B"]</td>
+<td>[-1]</td>
+</tr>
+<tr>
+<td>["AGZ", "BSSS"]</td>
+<td>["ASA","BGZ"]</td>
+<td>[4, 6]</td>
 </tr>
 </tbody>
       </table>
@@ -82,13 +88,46 @@
 
 <h5>입출력 예 설명</h5>
 
-<p>입출력 예 #1</p>
+<p>입출력 예 #1 </p>
 
-<p>본문과 같습니다.</p>
+<ul>
+<li>"ABCD"의 경우, </li>
+<li>1번 키 한 번 → A </li>
+<li>2번 키 한 번 → B </li>
+<li>2번 키 두 번 → C </li>
+<li>1번 키 다섯 번 → D </li>
+<li>따라서 총합인 9를 첫 번째 인덱스에 저장합니다. </li>
+<li>"AABB"의 경우, </li>
+<li>1번 키 한 번 → A </li>
+<li>1번 키 한 번 → A </li>
+<li>2번 키 한 번 → B </li>
+<li>2번 키 한 번 → B </li>
+<li>따라서 총합인 4를 두 번째 인덱스에 저장합니다. </li>
+<li>결과적으로 [9,4]를 return 합니다. </li>
+</ul>
 
-<p>입출력 예 #2</p>
+<p>입출력 예 #2 </p>
 
-<p><code>cards1</code>에서 "i"를 사용하고 <code>cards2</code>에서 "want"와 "to"를 사용하여 "i want to"까지는 만들 수 있지만 "water"가 "drink"보다 먼저 사용되어야 하기 때문에 해당 문장을 완성시킬 수 없습니다. 따라서 "No"를 반환합니다.</p>
+<ul>
+<li>"B"의 경우, 'B'가 어디에도 존재하지 않기 때문에 -1을 첫 번째 인덱스에 저장합니다. </li>
+<li>결과적으로 [-1]을 return 합니다. </li>
+</ul>
+
+<p>입출력 예 #3 </p>
+
+<ul>
+<li>"ASA"의 경우, </li>
+<li>1번 키 한 번 → A </li>
+<li>2번 키 두 번 → S </li>
+<li>1번 키 한 번 → A </li>
+<li>따라서 총합인 4를 첫 번째 인덱스에 저장합니다. </li>
+<li>"BGZ"의 경우, </li>
+<li>2번 키 한 번 → B </li>
+<li>1번 키 두 번 → G </li>
+<li>1번 키 세 번 → Z </li>
+<li>따라서 총합인 6을 두 번째 인덱스에 저장합니다. </li>
+<li>결과적으로 [4, 6]을 return 합니다.</li>
+</ul>
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
