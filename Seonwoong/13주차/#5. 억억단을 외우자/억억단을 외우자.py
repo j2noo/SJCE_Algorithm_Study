@@ -16,10 +16,10 @@ def solution(e, starts):
     arr.sort(key=lambda x:(-x[1]))
     
     #start의 시작값부터 arr리스트의 첫 값(약수가 최대인 개수의 해당하는 수)랑 비교하여 최대 개수 찾기
-    for i in starts:
-        for y in arr:
-            if i<=y[0]:
-                answer.append(y[0])
+    for i in range(len(starts)):
+        for j in range(len(arr)):
+            if starts[i]<=arr[j][0]:
+                answer.append(arr[j][0])
                 break
     
     return answer
