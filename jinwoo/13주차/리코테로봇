@@ -1,0 +1,54 @@
+# 시간 : 40분
+# lv2
+from collections import deque
+dirs =[(-1,0),(1,0),(0,-1),(0,1)]
+
+def move(board, dir,r,c):
+    N = len(board)
+    M = len(board[0])
+    dy,dx = dir
+    while(True):
+        nr = r+dy
+        nc = c+dx
+        if nr<0 or nc<0 or nr>=N or nc>=M or board[nr][nc]=='D':
+            return (r,c)
+        r,c=nr,nc
+    
+def bfs(board,start,goal,v):
+    queue = deque()
+    depth = 0
+    queue.append(start)
+    r,c =start
+    v[r][c] = 1
+    
+    while(len(queue)>0):
+        sze = len(queue)
+        for _ in range(sze):
+            pop = queue.popleft()
+            r,c = pop
+            
+            for dir in dirs:
+                nr,nc = move(board,dir,r,c)
+                if board[nr][nc]== 'G':
+                    return depth+1
+                elif v[nr][nc]==-1:
+                    v[nr][nc]=1
+                    queue.append((nr,nc))
+        depth+=1
+    return -1
+    
+def solution(board):
+    N = len(board)
+    M = len(board[0])
+    for i in range(N):
+        for j in range(M):
+            if board[i][j]=='R':
+                start = (i,j)
+            if board[i][j]=='G':
+                goal = (i,j)
+    
+    v = [[-1]*M for _ in range(N)]
+    return bfs(board,start,goal,v)
+    
+
+# bfs // 시간복잡도 모르겠음
