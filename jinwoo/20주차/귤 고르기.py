@@ -1,3 +1,4 @@
+# 15분
 def solution(k, tangerine):
     dic = {}
     for i in tangerine:
