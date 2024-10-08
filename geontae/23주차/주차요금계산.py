@@ -1,36 +1,37 @@
 import math
 
 
-def to_digit(n, k):
-    res = []
-
-    while n:
-        res.insert(0, n % k)
-        n = n // k
-    return res
-
-
-def is_prime(n):
-    if n == 1:
-        return False
-    if n == 2:
-        return True
-    for i in range(3, int(math.sqrt(n)) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-
-def solution(n, k):
-    answer = 0
-    digit = to_digit(n, k)
-    digit.append(0)
-    tmp = []
-    for i in range(0, len(digit)):
-        if digit[i] == 0:
-            if tmp and is_prime(int("".join(map(str, tmp)))):
-                answer += 1
-            tmp = []
+def solution(fees, records):
+    answer = []
+    fee = {}
+    time_table = {}
+    for i in range(0, len(records)):
+        time, num, p_type = records[i].split()
+        if p_type == 'IN':
+            time_table[num] = time
         else:
-            tmp.append(digit[i])
+            o_time = int(time.split(":")[0]) * 60 + int(time.split(":")[1])
+            i_time = int(time_table[num].split(":")[0]) * 60 + int(time_table[num].split(":")[1])
+            if num in fee:
+                fee[num] += o_time - i_time
+            else:
+                fee[num] = o_time - i_time
+            time_table[num] = 0
+
+    for key in time_table:
+        if time_table[key] != 0:
+            if key in fee:
+                fee[key] += 1439 - (int(time_table[key].split(":")[0]) * 60 + int(time_table[key].split(":")[1]))
+            else:
+                fee[key] = 1439 - (int(time_table[key].split(":")[0]) * 60 + int(time_table[key].split(":")[1]))
+
+    sorted_values = [fee[key] for key in sorted(fee)]
+
+    for v in sorted_values:
+        x = fees[1] + math.ceil((v - fees[0]) / fees[2]) * fees[3]
+        if x <= fees[1]:
+            answer.append(fees[1])
+        else:
+            answer.append(x)
+    
     return answer
