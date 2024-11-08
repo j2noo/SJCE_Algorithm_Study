@@ -35,7 +35,7 @@
 #### 진행 방식
 
 - [여기](https://github.com/soo5717/2021-Algorithm-Study#readme)를 참고했습니다.
-- 꾸준히 좀 해보자.
+- 꾸준히 좀 해보자..
 
 ## PR 규칙 및 Commit Message 규칙
 
