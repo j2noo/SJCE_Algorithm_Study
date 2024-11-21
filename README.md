@@ -87,7 +87,7 @@
 | 9주차    | 구현     | [로봇](https://www.acmicpc.net/problem/13567)         | [치즈](https://www.acmicpc.net/problem/2636)         | [테트로미노](https://www.acmicpc.net/problem/14500)     |
 | 10주차    | Greedy       | [오셀로 재배치](https://www.acmicpc.net/problem/13413) | [보석 도둑](https://www.acmicpc.net/problem/1202) | [빵집](https://www.acmicpc.net/problem/3109) |
 
-### 스터디 진행 상황(시즌 3 2024 7월~)
+### 스터디 진행 상황(시즌 3 2024.07 ~ 2024.10)
 
 ---
 
@@ -108,3 +108,11 @@
 | 23주차    | [상어 초등학교](https://www.acmicpc.net/problem/21608)     | [상어 중학교](https://www.acmicpc.net/problem/21609)    | [마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056)    | [마법사 상어와 토네이도](https://www.acmicpc.net/problem/20057)    | [마법사 상어와 파이어스톰](https://acmicpc.net/problem/20058)             |
 | 24주차   | [N으로표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895) | [숫자 변환하기](https://school.programmers.co.kr/learn/courses/30/lessons/154538) | [정수삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105) | [타겟넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | [가장큰수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) |
 | 25주차    | [DNA](https://www.acmicpc.net/problem/12891)     | [기타레슨](https://www.acmicpc.net/problem/2343)    | [좋다](https://www.acmicpc.net/problem/1253)    | [회전초밥](https://www.acmicpc.net/problem/2531)    | [합이 0인 네 정수](https://acmicpc.net/problem/7453)             |
+
+### 스터디 진행 상황(시즌 4 2024.11 ~)
+
+---
+
+| **주차** | **문제 1**                                                                      | **문제 2**                                                                    | **문제 3**                                                                     | **문제 4**                                                                               | **문제 5**                                                                                  |
+| -------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 26주차   | [안](https://school.programmers.co.kr/learn/courses/30/lessons/1535) | [카드합체놀이](https://school.programmers.co.kr/learn/courses/30/lessons/15903) | [세 수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/2295) | [게임 개발](https://school.programmers.co.kr/learn/courses/30/lessons/1516) | [Fly me to the Alpha Centauri](https://school.programmers.co.kr/learn/courses/30/lessons/1011) |
