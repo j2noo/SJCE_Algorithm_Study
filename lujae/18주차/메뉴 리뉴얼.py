@@ -11,13 +11,11 @@ def solution(orders, course):
         orders[i] = "".join(sorted(orders[i]))
     orders.sort(key = lambda x : len(x))
 
-
     for order in orders:
         num = 0
 
         for ch in order:
             idx = ord(ch) - ord('A')
-
             num += 2 << idx
 
         bit_mask[order] = num
