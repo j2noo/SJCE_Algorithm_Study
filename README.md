@@ -108,12 +108,12 @@
 | 23주차    | [상어 초등학교](https://www.acmicpc.net/problem/21608)     | [상어 중학교](https://www.acmicpc.net/problem/21609)    | [마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056)    | [마법사 상어와 토네이도](https://www.acmicpc.net/problem/20057)    | [마법사 상어와 파이어스톰](https://acmicpc.net/problem/20058)             |
 | 24주차   | [N으로표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895) | [숫자 변환하기](https://school.programmers.co.kr/learn/courses/30/lessons/154538) | [정수삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105) | [타겟넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | [가장큰수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) |
 | 25주차    | [DNA](https://www.acmicpc.net/problem/12891)     | [기타레슨](https://www.acmicpc.net/problem/2343)    | [좋다](https://www.acmicpc.net/problem/1253)    | [회전초밥](https://www.acmicpc.net/problem/2531)    | [합이 0인 네 정수](https://acmicpc.net/problem/7453)             |
-
-### 스터디 진행 상황(시즌 4 2024.11 ~)
+| 26주차   | [안녕](https://www.acmicpc.net/problem/1535) | [카드합체놀이](https://www.acmicpc.net/problem/15903) | [세 수의 합](https://www.acmicpc.net/problem/2295) | [게임 개발](https://www.acmicpc.net/problem/1516) | [Fly me to the Alpha Centauri](https://www.acmicpc.net/problem/1011) |
+| 27주차   | [신기한 소수](https://www.acmicpc.net/problem/2023) | [이차원 배열과 연산](https://www.acmicpc.net/problem/17140) | [두 배열의 합](https://www.acmicpc.net/problem/2143) | [합 분해](https://www.acmicpc.net/problem/2225) | [자두나무](https://www.acmicpc.net/problem/2240) |
+### 스터디 진행 상황(시즌 4 2025.02 ~)
 
 ---
 
 | **주차** | **문제 1**                                                                      | **문제 2**                                                                    | **문제 3**                                                                     | **문제 4**                                                                               | **문제 5**                                                                                  |
 | -------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| 26주차   | [안녕](https://www.acmicpc.net/problem/1535) | [카드합체놀이](https://www.acmicpc.net/problem/15903) | [세 수의 합](https://www.acmicpc.net/problem/2295) | [게임 개발](https://www.acmicpc.net/problem/1516) | [Fly me to the Alpha Centauri](https://www.acmicpc.net/problem/1011) |
-| 27주차   | [신기한 소수](https://www.acmicpc.net/problem/2023) | [이차원 배열과 연산](https://www.acmicpc.net/problem/17140) | [두 배열의 합](https://www.acmicpc.net/problem/2143) | [합 분해](https://www.acmicpc.net/problem/2225) | [자두나무](https://www.acmicpc.net/problem/2240) |
+| 28주차   | [수들의 ](https://www.acmicpc.net/problem/1789) | [좋은 구간](https://www.acmicpc.net/problem/1059) | [무한 문자열](https://www.acmicpc.net/problem/12871) | [지름길](https://www.acmicpc.net/problem/1446) | [진우의 비밀번호](https://www.acmicpc.net/problem/17205) |
