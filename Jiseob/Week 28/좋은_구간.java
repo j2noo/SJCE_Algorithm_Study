@@ -22,14 +22,12 @@ public class 좋은_구간 {
         } else if (n < S.get(0)) {
             System.out.println((n) * (S.get(0) - n) - 1);
         } else {
-            int count = 0;
             for (int i = 0; i < S.size() - 1; i++) {
                 if (S.get(i) < n && S.get(i + 1) > n) {
-                    count = (n - S.get(i)) * (S.get(i + 1) - n) - 1;
+                    System.out.println((n - S.get(i)) * (S.get(i + 1) - n) - 1);
                     break;
                 }
             }
-            System.out.println(count);
         }
     }
 }
