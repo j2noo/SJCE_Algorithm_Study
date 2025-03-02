@@ -1,3 +1,4 @@
+# 25분
 # A
 # ZA, OA, AC -> AC
 # ZAAC, OAC
