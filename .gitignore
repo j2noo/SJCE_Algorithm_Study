@@ -1,2 +1,7 @@
 /.vs
 /.vscode
+/jHyuk/bin/
+/jHyuk/obj/
+/jHyuk/*.config
+/jHyuk/*.sln
+/jHyuk/*.csproj
