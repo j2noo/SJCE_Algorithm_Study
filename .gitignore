@@ -1,6 +1,6 @@
 /.vs
 /.vscode
-/.vs/jHyuk
+/jHyuk/.vs
 /jHyuk/bin/
 /jHyuk/obj/
 /jHyuk/*.config
