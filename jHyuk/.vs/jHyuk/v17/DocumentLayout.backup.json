@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jhlee\\Desktop\\Study\\SJCE_Algorithm_Study\\jHyuk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5000F38A-3942-44B6-ABEC-69C1C1445470}|jHyuk.csproj|c:\\users\\jhlee\\desktop\\study\\sjce_algorithm_study\\jhyuk\\week31\\\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5000F38A-3942-44B6-ABEC-69C1C1445470}|jHyuk.csproj|solutionrelative:week31\\\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5000F38A-3942-44B6-ABEC-69C1C1445470}|jHyuk.csproj|c:\\users\\jhlee\\desktop\\study\\sjce_algorithm_study\\jhyuk\\week31\\\uB3CC \uAC8C\uC784.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5000F38A-3942-44B6-ABEC-69C1C1445470}|jHyuk.csproj|solutionrelative:week31\\\uB3CC \uAC8C\uC784.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs",
+              "DocumentMoniker": "C:\\Users\\jhlee\\Desktop\\Study\\SJCE_Algorithm_Study\\jHyuk\\week31\\\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs",
+              "RelativeDocumentMoniker": "week31\\\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs",
+              "ToolTip": "C:\\Users\\jhlee\\Desktop\\Study\\SJCE_Algorithm_Study\\jHyuk\\week31\\\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs",
+              "RelativeToolTip": "week31\\\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uC124.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:35:51.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\uB3CC \uAC8C\uC784.cs",
+              "DocumentMoniker": "C:\\Users\\jhlee\\Desktop\\Study\\SJCE_Algorithm_Study\\jHyuk\\week31\\\uB3CC \uAC8C\uC784.cs",
+              "RelativeDocumentMoniker": "week31\\\uB3CC \uAC8C\uC784.cs",
+              "ToolTip": "C:\\Users\\jhlee\\Desktop\\Study\\SJCE_Algorithm_Study\\jHyuk\\week31\\\uB3CC \uAC8C\uC784.cs",
+              "RelativeToolTip": "week31\\\uB3CC \uAC8C\uC784.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:34:55.931Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
