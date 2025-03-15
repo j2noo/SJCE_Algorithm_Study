@@ -1,32 +1,49 @@
-# 2^12
-from itertools import product, repeat
+# dfs? with 방문지도
+dy = [0,1,0,-1]
+dx = [1,0,-1,0]
+ans = 987654321
+def dfs(r,c,cnt):
+    global ans
+    global isVisited
+    print(f'{r},{c},{cnt}')
 
 
-N,D = map(int,input().split())
-yns = list(product(range(2),repeat=N))
+    if cnt >= ans :
+        return 
+    # if cnt + (N-r) + (M-c) > ans :
+    #     return 
+    if r == N-1 and c == M-1 :
+        ans = min(ans,cnt)
+    # print(f'{r},{c},{cnt}')
 
-infos = []
-for _ in range(N):
-    infos.append(list(map(int,input().split())))
-
-infos.sort()
-
-print(infos)
-ans = 9878797
-for yn in yns:
-    pos = 0
-    dist = 0
-    for idx,val in enumerate(yn):
-        if val==1: # 가자
-            if infos[idx][1] > D : # 거리초과
-                continue
-                
-            if pos <= infos[idx][0] : # 출발 가능
-                dist += infos[idx][0] - pos + infos[idx][2] # 이동
-                pos = infos[idx][1]
-                
-    dist += D  - pos + infos[idx][2]  # 이동
-    print(yn,dist)
-    ans = min(ans,dist)
-print(ans)
+        return
         
+    for dir in range(4):
+        nr = r + dy[dir]
+        nc = c + dx[dir]
+        if nr <0 or nr>= N or nc <0 or nc>= M:
+            continue
+        if isVisited[nr][nc] == 1 : 
+            continue
+        
+        isVisited[nr][nc] = 1
+        if arr[nr][nc] == '0' :
+
+            dfs(nr,nc,cnt)
+        else : 
+
+            dfs(nr,nc,cnt+1)
+        isVisited[nr][nc] = 0
+
+
+M,N  = map(int,input().split())
+isVisited = [[0]*M for _ in range(N)]
+
+arr = []
+for _ in range(N):
+    arr.append(list(input()))
+
+# print(arr)
+
+dfs(0,0,0)
+print(ans)
